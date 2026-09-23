@@ -26,7 +26,7 @@ export default function Decorations({ variant = "quiet" }: Props) {
       {loud && (
         <>
           {/* 淡いオレンジのアーチ */}
-          <svg viewBox="0 0 100 60" className="absolute right-6 bottom-40 h-14 w-24 animate-float-slow sm:right-[12%]">
+          <svg viewBox="0 0 100 60" className="absolute right-6 bottom-40 hidden h-14 w-24 animate-float-slow min-[375px]:block sm:right-[12%]">
             <path d="M5 55a45 45 0 0 1 90 0" fill="none" stroke="var(--color-peach)" strokeWidth="12" strokeLinecap="round" />
           </svg>
           {/* キラッ */}
@@ -34,7 +34,7 @@ export default function Decorations({ variant = "quiet" }: Props) {
             <path fill="currentColor" d="M12 0c.8 6.4 5.6 11.2 12 12-6.4.8-11.2 5.6-12 12-.8-6.4-5.6-11.2-12-12C6.4 11.2 11.2 6.4 12 0z" />
           </svg>
           {/* くねくね */}
-          <svg viewBox="0 0 80 20" className="absolute right-[14%] top-[34%] h-4 w-16 opacity-80 sm:right-[20%]">
+          <svg viewBox="0 0 80 20" className="absolute right-[18%] top-[20%] hidden h-4 w-16 opacity-80 sm:block">
             <path d="M2 10c6-8 12-8 18 0s12 8 18 0 12-8 18 0 12 8 18 0" fill="none" stroke="var(--color-ink)" strokeWidth="3" strokeLinecap="round" />
           </svg>
         </>

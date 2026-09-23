@@ -1,4 +1,4 @@
-import { SITE } from "./config";
+import { BRAND, SITE } from "./config";
 import { formatScore } from "./scoring";
 
 /** シェア用URL（?score= で結果カードを表示できる） */
@@ -8,7 +8,7 @@ export function buildShareUrl(score: number, origin?: string): string {
 }
 
 export function buildShareText(score: number): string {
-  return `私の集中力は ${formatScore(score)} でした。\n\n${SITE.name}\n${SITE.byline}\n\nあなたも測ってみる？`;
+  return `私の集中力は ${formatScore(score)} でした。\n\n${SITE.name}\n${BRAND.concept}\n${SITE.byline}\n\nあなたも測ってみる？`;
 }
 
 /** クリップボードへコピー。Instagram のアプリ内ブラウザなど API が使えない環境向けのフォールバック付き */

@@ -3,7 +3,7 @@
 import Disclaimer from "./Disclaimer";
 import Dot from "./Dot";
 import ScoreText from "./ScoreText";
-import { SITE } from "@/lib/config";
+import { BRAND, SITE } from "@/lib/config";
 import type { ScoreRecord } from "@/lib/storage";
 
 type Props = {
@@ -23,6 +23,10 @@ export default function StartScreen({ onStart, lastRecord }: Props) {
         <Dot size={56} className="mx-auto mb-5 animate-wiggle" color="var(--color-butter)" />
       </div>
 
+      <p className="animate-rise mb-4 inline-block -rotate-2 rounded-full border-2 border-ink bg-butter px-4 py-1.5 text-[13px] font-black tracking-wide shadow-[0_3px_0_0_var(--color-ink)] min-[375px]:text-sm" style={{ animationDelay: "80ms" }}>
+        {BRAND.concept}
+      </p>
+
       <h1 className="animate-rise text-[2.75rem] leading-none font-black tracking-tight sm:text-6xl" style={{ animationDelay: "120ms" }}>
         集中力テスト
       </h1>
@@ -30,11 +34,11 @@ export default function StartScreen({ onStart, lastRecord }: Props) {
         {SITE.byline}
       </p>
 
-      <p className="animate-rise mt-10 text-2xl leading-snug font-black sm:text-[1.7rem]" style={{ animationDelay: "260ms" }}>
+      <p className="animate-rise mt-10 text-[clamp(1.25rem,6.4vw,1.5rem)] leading-snug font-black sm:text-[1.7rem]" style={{ animationDelay: "260ms" }}>
         今のあなた、
         <br />
         <span className="relative inline-block">
-          <span className="absolute inset-x-[-4px] bottom-1 -z-10 h-3 rounded-full bg-butter" aria-hidden />
+          <span className="absolute inset-x-[-4px] bottom-1 -z-10 h-3 rounded-full bg-sky/70" aria-hidden />
           どれくらい集中できてる？
         </span>
       </p>
