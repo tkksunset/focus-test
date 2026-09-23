@@ -22,8 +22,8 @@ export const SITE = {
 } as const;
 
 export const INSTAGRAM = {
-  handle: "@tkk_sunset",
-  url: "https://www.instagram.com/tkk_sunset/",
+  handle: "@tkk_sunset_life",
+  url: "https://www.instagram.com/tkk_sunset_life/",
 } as const;
 
 export const BRAND = {
